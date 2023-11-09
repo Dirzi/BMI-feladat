@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalória Kalkulátor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://i.pinimg.com/736x/f2/a2/c8/f2a2c890994724bee9aecfb8de4d5c1c.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .table-cell {
+            margin: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            background-color: black; 
+            color: white; 
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #eredmenyek {
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 50px;
+            background-color: azure;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <div class="table-cell">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mozgásforma</th>
+                    </tr>
+                </thead>
+                <tbody id="mozgasformakTabla"></tbody>
+            </table>
+        </div>
+        <div class="table-cell">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Idő (perc)</th>
+                    </tr>
+                </thead>
+                <tbody id="idoTabla"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <button type="button" onclick="szamol()">Számol</button>
+    <div id="eredmenyek"></div>
+    <button type="button" onclick="adatokTorlese()">Adatok törlése</button>
+
+    <script src="2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testtömegindex Kalkulátor</title>
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         height: 100vh;
+         margin: 0;
+         background-image: url('https://www.egeszsegtukor.hu/images/news/news_12625_a-testzsir-index-beszedesebb-a-testtomeg-indexnel.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+         background-attachment: fixed; 
+         background-position: center center; 
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        th, td {
+            border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        }
+
+
+        tr:nth-child(even) {
+        background-color: yellow;
+    }
+
+    tr:nth-child(odd) {
+        background-color: green;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Testtömeg (kg): </th>
+            <td><input type="number" id="testtomeg" onkeyup="szamol()" required></td>
+        </tr>
+        <tr>
+            <th>Magasság (cm): </th>
+            <td><input type="number" id="magassag" onkeyup="szamol()" required></td>
+        </tr>
+        <tr>
+            <th>Testtömegindex (BMI): </th>
+            <td><span id="bmi"></span></td>
+        </tr>
+        <tr>
+            <th>Súlytöbblet (kg): </th>
+            <td><span id="sulytobblet"></span></td>
+        </tr>
+    </table>
+
+   
+
+    <script src="1.js"></script>
+</body>
+
+</html>
